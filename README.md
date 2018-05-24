@@ -2,7 +2,7 @@
 
 Fifth project of Google Front-End Web Developer Nanodegree Scholarship at Udacity. The starter code was provided by Udacity: 
 http://github.com/udacity/frontend-nanodegree-feedreader
-I had to use Jasmine framework to write the tests for the existing application.
+I had to use Jasmine framework to write the tests for the existing application. Live version of the project https://dominikamalewska.github.io/Feed-Reader-Testing/
 
 ## How to run it
 
