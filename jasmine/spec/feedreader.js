@@ -75,11 +75,10 @@ $(function() {
         });
 
         it('should load at least one entry element', function(done) {
-            expect(document.querySelector('.feed').innerHTML).not.toBe('');
+            expect($('.feed .entry')).not.toBe(null);
             done();
         });
-
-    });
+     });
 
 
     /* Test for the "New Feed Selection" RSS definition */
