@@ -38,26 +38,25 @@ $(function() {
     });
 
 
-    /* Test for the menu */
+   /* Test for the menu */
     describe('The menu', function() {
-        const menu = document.getElementsByTagName('body')[0];
 
         /* Test to make sure the menu element is hidden by default. */
-        it('is hidden by default', function() {
-            expect(menu.classList.contains('menu-hidden')).toBe(true);
+
+        it('has menu element hidden by default', function() {
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
         /* Test that the menu changes visibility when the menu 
          * icon is clicked. 
          */
         it('change visibility on click', function() {
-            const menuIcon = document.querySelector('.menu-icon-link');
-            menuIcon.click();
-            expect(menu.classList.contains('menu-hidden')).toBe(false);
-            menuIcon.click();
-            expect(menu.classList.contains('menu-hidden')).toBe(true);
+            const menu = document.querySelector('.menu-icon-link');
+            menu.click();
+            expect($('body').hasClass('menu-hidden')).toBe(false);
+            menu.click();
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });
-
     });
 
 
