@@ -74,7 +74,7 @@ $(function() {
         });
 
         it('should load at least one entry element', function(done) {
-            expect($('.feed .entry')).not.toBe(null);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
             done();
         });
      });
